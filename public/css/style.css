@@ -1,81 +1,145 @@
-body {
-    font-family: sans-serif;
-    margin: 0;
-}
-
-.container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-header {
-    background-color: #f0f0f0;
-    padding: 10px 0;
-}
-
-nav ul {
-    list-style: none;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+header {
+    position: absolute;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 100;
+}
+nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
-
-nav ul li {
-    margin: 0 10px;
-}
-
-nav ul li a {
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
     text-decoration: none;
-    color: #333;
 }
-
-.auth-links {
+.nav-links {
     display: flex;
-    gap: 10px;
+    list-style: none;
+    flex-wrap: wrap;
 }
-
+.nav-links li {
+    margin-left: 30px;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+.auth-buttons .btn {
+    margin-left: 10px;
+}
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+.btn-primary {
+    background-color: #00a8ff;
+    color: white;
+}
+.btn-secondary {
+    color: white;
+    border: 1px solid white;
+}
 .hero {
-    background-image: url('/images/hero-bg.jpg'); /* Replace with your image path */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("/images/hero-bg.jpg");
     background-size: cover;
     background-position: center;
-    color: #fff;
-    padding: 100px 0;
-    text-align: center;
-}
-
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.features {
-    margin: 50px 0;
+    min-height: 100vh;
     display: flex;
-    justify-content: space-around; /* Align feature boxes horizontally */
-}
-
-.feature-box {
-    background-color: #f0f0f0;
+    align-items: center;
+    text-align: center;
+    color: white;
     padding: 20px;
+}
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.hero h1 {
+    font-size: 48px;
     margin-bottom: 20px;
-    text-align: center;
-    width: 30%; /* Adjust width as needed */
+}
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.services {
+    margin-top: -100px;
+    padding: 20px 0 50px;
+}
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+.service-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 100%;
+}
+.service-card.primary {
+    background-color: #00a8ff;
+    color: white;
+}
+.service-icon {
+    width: 50px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+.service-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+@media (max-width: 768px) {
+    .nav-links,
+    .auth-buttons {
+        flex-basis: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .nav-links li {
+        margin: 10px 15px;
+    }
+    .hero h1 {
+        font-size: 36px;
+    }
+    .hero p {
+        font-size: 16px;
+    }
+    .services {
+        margin-top: -50px;
+    }
+}
+
+@media (min-width: 769px) {
+    .service-card {
+        flex: 1 1 calc(33.333% - 20px);
+    }
 }

@@ -1,60 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Static Landing Page</title>
-    <link rel="stylesheet" href="css/style.css"> </head>
-<body>
+    <title>BrandName</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+</head>
 
+<body>
     <header>
-        <div class="container">
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Product</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                <div class="auth-links">
-                    <a href="#">Login</a>
-                    <a href="#">Become a Member</a>
-                </div>
-            </nav>
-        </div>
+        <nav class="container">
+            <a href="#" class="logo">BrandName</a>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="#" class="btn btn-secondary">Login</a>
+                <a href="#" class="btn btn-primary">Become a member →</a>
+            </div>
+        </nav>
     </header>
 
     <section class="hero">
-        <div class="container">
-            <h1>Creating a Beautiful & Useful Solutions</h1>
-            <p>We know how large objects will act, but things on a small scale just do not act that way.</p>
-            <a href="#" class="btn">Get Quote Now</a>
-            <a href="#" class="btn">Learn More</a>
-        </div>
-    </section>
-
-    <section class="features">
-        <div class="container">
-            <div class="feature-box">
-                <h2>Investment Trading</h2>
-                <p>The quick brown fox jumps over the lazy dog.</p>
-            </div>
-            <div class="feature-box">
-                <h2>Raising Funds</h2>
-                <p>The quick brown fox jumps over the lazy dog.</p>
-            </div>
-            <div class="feature-box">
-                <h2>Financial Analysis</h2>
-                <p>The quick brown fox jumps over the lazy dog.</p>
+        <div class="hero-content">
+            <h1>Creating a Beautifull <br>& Usefull Solutitons</h1>
+            <p>We know how large objects will act, but things on a <br>small scale just do not act that way.</p>
+            <div>
+                <a href="#" class="btn btn-primary">Get Quote Now</a>
+                <a href="#" class="btn btn-secondary">Learn More</a>
             </div>
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 Your Company Name</p>
+    <section class="services container">
+        <div class="services-grid">
+            <div class="service-card">
+                <img src="/images/icn1.png" alt="Investment Trading Icon" class="service-icon">
+                <h3>Investment Trading</h3>
+                <p>the quick fox jumps over the lazy dog</p>
+            </div>
+            <div class="service-card">
+                <img src="/images/icn1.png" alt="Raising Funds Icon" class="service-icon">
+                <h3>Raising Funds</h3>
+                <p>the quick fox jumps over the lazy dog</p>
+            </div>
+            <div class="service-card primary">
+                <img src="/images/icn2.png" alt="Financial Analysis Icon" class="service-icon">
+                <h3>Financial Analysis</h3>
+                <p>the quick fox jumps over the lazy dog</p>
+            </div>
         </div>
-    </footer>
-
+    </section>
 </body>
+
 </html>
