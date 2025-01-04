@@ -14,7 +14,7 @@ This project is a Laravel-based financial transaction analysis system that provi
 
 1. Clone the repository
 ```bash
-git clone <repository-url>
+git clone git@github.com:getankushtyagi/vola-finance.git
 cd vola-finance
 ```
 
@@ -149,12 +149,7 @@ Response:
 
 ## Testing
 
-1. Run PHPUnit tests:
-```bash
-php artisan test
-```
-
-2. Test API endpoints using cURL:
+1. Test API endpoints using cURL:
 
 ```bash
 # Test closing balances
@@ -165,7 +160,7 @@ curl "http://localhost:8000/api/transaction-analysis?user_id=1194398"
 ```
 
 Or using a REST client like Postman:
-1. Import the included Postman collection from `postman/Vola_Finance_API.json`
+1. Import the included Postman collection from `postman/vola-finance.postman_collection.json`
 2. Set the `base_url` variable to your local server URL
 3. Run the requests in the collection
 
@@ -176,35 +171,3 @@ The landing page can be accessed at the root URL (`/`) and includes:
 - Hero section with call-to-action buttons
 - Service cards showcasing different financial services
 - Responsive design for all screen sizes
-
-## Error Handling
-
-The API includes comprehensive error handling for:
-- Invalid user IDs
-- Missing parameters
-- Database connection issues
-- Invalid date ranges
-- Data validation errors
-
-## Security
-
-- API routes are protected using Laravel Sanctum
-- Input validation for all API endpoints
-- SQL injection protection
-- XSS protection
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE.md file for details
-
-## Support
-
-For support, please contact: [your-email@example.com]

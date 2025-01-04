@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "6d847631-f5b1-4b83-87bf-b85399d5ab21",
+		"name": "vola-finance",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27085349",
+		"_collection_link": "https://interstellar-crescent-100413.postman.co/workspace/My-Workspace~0ab16205-5f1b-448e-809e-d2a148298866/collection/27085349-6d847631-f5b1-4b83-87bf-b85399d5ab21?action=share&source=collection_link&creator=27085349"
+	},
+	"item": [
+		{
+			"name": "closing-balances",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/closing-balances?user_id=1194398",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"closing-balances"
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "1194398"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "transaction-analysis",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/transaction-analysis?user_id=1194398",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"transaction-analysis"
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "1194398"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
